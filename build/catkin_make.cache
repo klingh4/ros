@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/vmuser/Documents/ros/devel -DCMAKE_INSTALL_PREFIX=/home/vmuser/Documents/ros/install -G Unix Makefiles
