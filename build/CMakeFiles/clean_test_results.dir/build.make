@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/vmuser/Documents/ros/src
+CMAKE_SOURCE_DIR = /home/wsluser/ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/vmuser/Documents/ros/build
+CMAKE_BINARY_DIR = /home/wsluser/ros/build
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/vmuser/Documents/ros/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/vmuser/Documents/ros/build/test_results
+	/usr/bin/python3 /opt/ros/noetic/share/catkin/cmake/test/remove_test_results.py /home/wsluser/ros/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/vmuser/Documents/ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/vmuser/Documents/ros/src /home/vmuser/Documents/ros/src /home/vmuser/Documents/ros/build /home/vmuser/Documents/ros/build /home/vmuser/Documents/ros/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/wsluser/ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/wsluser/ros/src /home/wsluser/ros/src /home/wsluser/ros/build /home/wsluser/ros/build /home/wsluser/ros/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

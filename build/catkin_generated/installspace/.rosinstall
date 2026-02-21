@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/vmuser/Documents/ros/install/setup.sh
+    local-name: /home/wsluser/ros/install/setup.sh
