@@ -136,6 +136,7 @@ gtest/googletest/clean: gtest/googletest/CMakeFiles/gtest.dir/clean
 # Directory level rules for directory ros
 
 # Recursive "all" directory target.
+ros/all: ros/CMakeFiles/subscriber_node.dir/all
 ros/all: ros/CMakeFiles/ros_generate_messages.dir/all
 ros/all: ros/CMakeFiles/publisher_node.dir/all
 
@@ -158,6 +159,7 @@ ros/clean: ros/CMakeFiles/roscpp_generate_messages_py.dir/clean
 ros/clean: ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 ros/clean: ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 ros/clean: ros/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+ros/clean: ros/CMakeFiles/subscriber_node.dir/clean
 ros/clean: ros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 ros/clean: ros/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 ros/clean: ros/CMakeFiles/ros_generate_messages.dir/clean
@@ -719,6 +721,47 @@ ros/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
 .PHONY : ros/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
+# Target rules for target ros/CMakeFiles/subscriber_node.dir
+
+# All Build rule for target.
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/roscpp_generate_messages_py.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/roscpp_generate_messages_eus.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_py.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ros/CMakeFiles/subscriber_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f ros/CMakeFiles/subscriber_node.dir/build.make ros/CMakeFiles/subscriber_node.dir/depend
+	$(MAKE) -f ros/CMakeFiles/subscriber_node.dir/build.make ros/CMakeFiles/subscriber_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/wsluser/ros/build/CMakeFiles --progress-num=12,13 "Built target subscriber_node"
+.PHONY : ros/CMakeFiles/subscriber_node.dir/all
+
+# Build rule for subdir invocation for target.
+ros/CMakeFiles/subscriber_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsluser/ros/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 ros/CMakeFiles/subscriber_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsluser/ros/build/CMakeFiles 0
+.PHONY : ros/CMakeFiles/subscriber_node.dir/rule
+
+# Convenience name for target.
+subscriber_node: ros/CMakeFiles/subscriber_node.dir/rule
+
+.PHONY : subscriber_node
+
+# clean rule for target.
+ros/CMakeFiles/subscriber_node.dir/clean:
+	$(MAKE) -f ros/CMakeFiles/subscriber_node.dir/build.make ros/CMakeFiles/subscriber_node.dir/clean
+.PHONY : ros/CMakeFiles/subscriber_node.dir/clean
+
+#=============================================================================
 # Target rules for target ros/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
@@ -1143,12 +1186,7 @@ ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/rosgraph_msgs_generate_mes
 ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/roscpp_generate_messages_eus.dir/all
 ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_py.dir/all
-ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/ros_generate_messages_cpp.dir/all
-ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/ros_generate_messages_lisp.dir/all
 ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/ros_generate_messages_eus.dir/all
-ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/ros_generate_messages_nodejs.dir/all
-ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/ros_generate_messages_py.dir/all
 ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f ros/CMakeFiles/publisher_node.dir/build.make ros/CMakeFiles/publisher_node.dir/depend
@@ -1158,7 +1196,7 @@ ros/CMakeFiles/publisher_node.dir/all: ros/CMakeFiles/std_msgs_generate_messages
 
 # Build rule for subdir invocation for target.
 ros/CMakeFiles/publisher_node.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsluser/ros/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsluser/ros/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 ros/CMakeFiles/publisher_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/wsluser/ros/build/CMakeFiles 0
 .PHONY : ros/CMakeFiles/publisher_node.dir/rule
