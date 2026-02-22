@@ -1,11 +1,15 @@
 #include "ros/ros.h"
-#include "std_msgs/String.h"
+//#include "std_msgs/String.h"
+#include "ros/person_data.h"
 
 //Function that is called from s
 //the value that is called with is of type std_msgs and we take that value and point msg to it
-void writeMsgToLog(const std_msgs::String::ConstPtr &msg) {
+void writeMsgToLog(const ros::person_data &person_data) {
     //functions like a print statement and this will print the message to the console
-    ROS_INFO("The message we recived: %s", msg->data.c_str()); 
+    ROS_INFO("Name: %s \n", person_data.name.c_str());
+    ROS_INFO("Age: %i \n", person_data.age);
+    ROS_INFO("Color: %s \n", person_data.color.c_str());
+
 }
 
 

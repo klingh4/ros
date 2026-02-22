@@ -3,6 +3,6 @@ prefix=/home/wsluser/ros/devel
 Name: ros
 Description: Description of ros
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/wsluser/ros/devel/include
 Libs: -L${prefix}/lib 
 Requires: 
